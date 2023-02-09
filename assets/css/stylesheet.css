@@ -7,22 +7,24 @@ body {
 }
 
 header {
-  padding: 50px;
+  padding: 10px;
   padding-bottom: 15px;
   text-align: left;
   background: darkcyan;
   color: aliceblue;
 }
 
-header article {
+.introduction-img {
   max-height: auto;
-  max-width: 250px;
-  position: relative;
+  max-width: 400px;
+  position: absolute;
   text-align: center;
 }
 
-.name {
-  position: absolute;
+.introduction-name {
+  position: relative;
+  left: 15px;
+  top: 15px;
 }
 
 header h6 {
@@ -31,6 +33,7 @@ header h6 {
 
 header h1 {
   display: inline-block;
+  background-color: darkgoldenrod;
 }
 
 header nav {
