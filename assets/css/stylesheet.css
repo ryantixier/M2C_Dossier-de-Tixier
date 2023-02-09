@@ -9,16 +9,14 @@ body {
 header {
   display: flexbox;
   padding: 10px;
-  padding-bottom: 15px;
-  text-align: left;
-  background: darkcyan;
-  color: aliceblue;
+  background: rgb(2, 17, 53);
+  color: rgb(255, 255, 255);
 }
 
 header h1 {
   display: inline-block;
-  background-color: darkgoldenrod;
-  flex-direction: end;
+  background-color: rgb(196, 161, 73);
+  justify-content: center;
 }
 
 .introduction-img {
@@ -29,9 +27,9 @@ header h1 {
 }
 
 .introduction-name {
+  padding: 0;
   display: flex;
   /* position: relative; */
-  justify-content: center;
   left: 0px;
   top: 15px;
 }
