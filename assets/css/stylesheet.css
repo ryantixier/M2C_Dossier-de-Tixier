@@ -7,7 +7,7 @@ body {
 }
 
 header {
-  display: flex;
+  display: flexbox;
   padding: 10px;
   padding-bottom: 15px;
   text-align: left;
@@ -15,24 +15,25 @@ header {
   color: aliceblue;
 }
 
-.introduction-img {
-  max-height: auto;
-  max-width: 400px;
-  position: absolute;
-  text-align: center;
-}
-
-.introduction-name {
-  position: relative;
-  align-content: end;
-  left: 15px;
-  top: 15px;
-}
-
 header h1 {
   display: inline-block;
   background-color: darkgoldenrod;
   flex-direction: end;
+}
+
+.introduction-img {
+  display: flex;
+  max-height: auto;
+  max-width: 400px;
+  position: absolute;
+}
+
+.introduction-name {
+  display: flex;
+  /* position: relative; */
+  justify-content: center;
+  left: 0px;
+  top: 15px;
 }
 
 nav {
@@ -42,7 +43,8 @@ nav {
 }
 
 nav p {
-  /* display: flex; */
+  display: flex;
+  flex-wrap: wrap;
   padding: 30px;
   padding-bottom: 20px;
 }
