@@ -14,6 +14,8 @@ header {
   /* padding: 0px; */
   background: rgb(2, 17, 53);
   color: rgb(255, 255, 255);
+  width: 100%;
+  /* flex-direction: row; */
 }
 
 header h1 {
@@ -22,10 +24,9 @@ header h1 {
 
 .introduction-img {
   display: flex;
-  flex-direction: column;
   justify-content: flex;
   max-height: auto;
-  max-width: 400px;
+  max-width: 20%;
   padding: 1%;
   /* position: absolute; */
 }
@@ -33,18 +34,18 @@ header h1 {
 .introduction-name {
   display: flex;
   /* position: relative; */
-  width: 1000px;
+  width: 40%;
   max-height: auto;
-  align-items: center;
+  /* align-items: center; */
   /* padding: 0; */
-  font-size: 75px;
+  font-size: 300%;
   /* left: 0px; */
   /* top: 15px; */
 }
 
 nav {
   display: flex;
-  width: 1000px;
+  width: 40%;
   justify-content: space-evenly;
   background-color: darkslategrey;
 }
