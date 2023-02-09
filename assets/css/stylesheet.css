@@ -7,6 +7,7 @@ body {
 }
 
 header {
+  display: flex;
   padding: 10px;
   padding-bottom: 15px;
   text-align: left;
@@ -23,29 +24,30 @@ header {
 
 .introduction-name {
   position: relative;
+  align-content: end;
   left: 15px;
   top: 15px;
-}
-
-header h6 {
-  color: darkcyan;
 }
 
 header h1 {
   display: inline-block;
   background-color: darkgoldenrod;
+  flex-direction: end;
 }
 
-header nav {
+nav {
   display: flex;
   float: right;
   background-color: darkslategrey;
 }
 
-header nav p {
+nav p {
+  /* display: flex; */
   padding: 30px;
   padding-bottom: 20px;
 }
+
+/* ADD main{} section here!!! */
 
 /* utilize flexbox for responsive layout */
 /* ^^figure out different screen size standards */
@@ -54,7 +56,7 @@ header nav p {
 /* img size for avatar 30%? */
 /* img size for prework = 200% */
 /* img size for ch.1&placeholder 100% */
-
+/* 
 @media screen and (max-width: 992px) {
   header {
     background: #772014;
@@ -62,8 +64,8 @@ header nav p {
 }
 
 /* Large smartphones - navbar changes color */
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   nav {
     background-color: #bb8588;
   }
-}
+} */
