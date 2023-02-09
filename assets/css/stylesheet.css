@@ -1,3 +1,49 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  padding: 50px;
+  padding-bottom: 15px;
+  text-align: left;
+  background: darkcyan;
+  color: aliceblue;
+}
+
+header article {
+  max-height: auto;
+  max-width: 250px;
+  position: relative;
+  text-align: center;
+}
+
+.name {
+  position: absolute;
+}
+
+header h6 {
+  color: darkcyan;
+}
+
+header h1 {
+  display: inline-block;
+}
+
+header nav {
+  display: flex;
+  float: right;
+  background-color: darkslategrey;
+}
+
+header nav p {
+  padding: 30px;
+  padding-bottom: 20px;
+}
+
 /* utilize flexbox for responsive layout */
 /* ^^figure out different screen size standards */
 
@@ -5,3 +51,16 @@
 /* img size for avatar 30%? */
 /* img size for prework = 200% */
 /* img size for ch.1&placeholder 100% */
+
+@media screen and (max-width: 992px) {
+  header {
+    background: #772014;
+  }
+}
+
+/* Large smartphones - navbar changes color */
+@media screen and (max-width: 768px) {
+  nav {
+    background-color: #bb8588;
+  }
+}
