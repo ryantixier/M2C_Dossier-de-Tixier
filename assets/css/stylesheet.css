@@ -6,7 +6,6 @@ body {
   margin: 0;
   display: flex;
   flex-wrap: wrap;
-  height: auto;
 }
 
 .card {
@@ -30,12 +29,13 @@ body {
   /* flex-direction: column; */
   /* justify-content: flex; */
   /* flex-direction: row; */
-  max-height: 20%;
-
-  padding-top: 1%;
+  height: 20%;
+  /* max-width: auto; */
   padding-left: 1%;
-  padding-right: 80%;
-  /* margin-right: 0; */
+  padding-top: 3%;
+  /* padding-left: 1%; */
+  /* padding-right: 80%; */
+
   /* margin-left: auto; */
   position: absolute;
   /* justify-self: flex-end; */
@@ -47,30 +47,31 @@ body {
   /* flex-direction: column; */
   /* justify-content: flex-start; */
   /* align-items: flex-start; */
-  align-self: flex-end;
+  /* align-self: flex-end; */
   /* align-self: flex-start; */
   /* flex-direction: column; */
-  position: relative;
-  width: 80%;
+  /* position: relative; */
+  min-width: 100%;
   /* max-height: 20%; */
   /* align-items: center; */
   /* padding: 0; */
   font-size: 300%;
   /* margin-left: 20%; */
   margin-bottom: 0%;
-  padding-left: 2%;
+  /* padding-left: 2%; */
   justify-content: center;
   /* left: 0px; */
   /* top: 15px; */
 }
 
 nav {
-  position: relative;
+  /* position: relative; */
   display: flex;
-  width: 80%;
+  min-width: 100%;
   /* margin-left: 20%; */
-  align-self: flex-end;
-  justify-content: space-evenly;
+  /* align-self: flex-end; */
+  justify-content: space-around;
+  justify-self: flex-end;
   background-color: darkslategrey;
   flex-wrap: wrap;
   /* margin-left: 20%; */
@@ -79,6 +80,7 @@ nav {
 nav p {
   display: flex;
   flex-wrap: wrap;
+  padding-left: 20%;
   /* padding: 10px; */
   /* padding-bottom: 10px; */
 }
@@ -87,6 +89,22 @@ nav p {
 main {
   display: flex;
   flex-wrap: wrap;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+}
+
+aside {
+  height: 100%;
+  width: 200px;
+  position: absolute;
+}
+
+article {
+  margin-left: 200px;
+  padding-left: 20px;
 }
 /* utilize flexbox for responsive layout */
 /* ^^figure out different screen size standards */
