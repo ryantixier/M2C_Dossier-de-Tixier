@@ -4,51 +4,63 @@
 
 body {
   margin: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 header {
-  display: flexbox;
-  padding: 10px;
+  /* display: flexbox; */
+  /* flex-wrap: wrap; */
+  /* padding: 0px; */
   background: rgb(2, 17, 53);
   color: rgb(255, 255, 255);
 }
 
 header h1 {
-  display: inline-block;
   background-color: rgb(196, 161, 73);
-  justify-content: center;
 }
 
 .introduction-img {
   display: flex;
+  flex-direction: column;
+  justify-content: flex;
   max-height: auto;
   max-width: 400px;
-  position: absolute;
+  padding: 1%;
+  /* position: absolute; */
 }
 
 .introduction-name {
-  padding: 0;
   display: flex;
   /* position: relative; */
-  left: 0px;
-  top: 15px;
+  width: 1000px;
+  max-height: auto;
+  align-items: center;
+  /* padding: 0; */
+  font-size: 75px;
+  /* left: 0px; */
+  /* top: 15px; */
 }
 
 nav {
   display: flex;
-  float: right;
+  width: 1000px;
+  justify-content: space-evenly;
   background-color: darkslategrey;
 }
 
 nav p {
   display: flex;
   flex-wrap: wrap;
-  padding: 30px;
-  padding-bottom: 20px;
+  /* padding: 10px; */
+  /* padding-bottom: 10px; */
 }
 
 /* ADD main{} section here!!! */
-
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
 /* utilize flexbox for responsive layout */
 /* ^^figure out different screen size standards */
 
