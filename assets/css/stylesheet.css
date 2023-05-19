@@ -9,80 +9,49 @@ body {
 }
 
 .card {
-  /* display: flexbox; */
-  /* flex-wrap: wrap; */
-  /* padding: 0px; */
   display: flex;
-  /* flex-direction: column; */
   background: rgb(2, 17, 53);
   color: rgb(255, 255, 255);
   width: 100%;
-  /* height: auto; */
-  flex-direction: column;
-  justify-content: flex-end;
-  /* flex-wrap: wrap-reverse; */
-  /* flex-direction: row; */
+  height: 150px;
+  flex-direction: row;
 }
 
-.card #introduction-img {
-  display: flex;
-  /* flex-direction: column; */
-  /* justify-content: flex; */
-  /* flex-direction: row; */
-  height: 20%;
-  /* max-width: auto; */
-  padding-left: 1%;
-  padding-top: 3%;
-  /* padding-left: 1%; */
-  /* padding-right: 80%; */
-
-  /* margin-left: auto; */
-  position: absolute;
-  /* justify-self: flex-end; */
+#introduction-img {
+  margin-left: 2%;
+  max-width: auto;
 }
 
-.card #introduction-name {
+#head-nav {
+  width: 100%;
+  height: 100%;
+}
+
+#introduction-name {
   background-color: rgb(196, 161, 73);
-  display: flex;
-  /* flex-direction: column; */
-  /* justify-content: flex-start; */
-  /* align-items: flex-start; */
-  /* align-self: flex-end; */
-  /* align-self: flex-start; */
-  /* flex-direction: column; */
-  /* position: relative; */
-  min-width: 100%;
-  /* max-height: 20%; */
-  /* align-items: center; */
-  /* padding: 0; */
+  width: 100%;
+  height: 50%;
   font-size: 300%;
-  /* margin-left: 20%; */
   margin-bottom: 0%;
-  /* padding-left: 2%; */
-  justify-content: center;
-  /* left: 0px; */
-  /* top: 15px; */
+  margin-top: 0%;
+  padding-left: 3%;
+  padding-top: 1.5%;
 }
 
-nav {
-  /* position: relative; */
+#nav {
   display: flex;
-  min-width: 100%;
-  /* margin-left: 20%; */
-  /* align-self: flex-end; */
-  justify-content: space-around;
-  justify-self: flex-end;
+  width: 100%;
+  height: 50%;
+  flex-direction: row;
   background-color: darkslategrey;
   flex-wrap: wrap;
-  /* margin-left: 20%; */
+  padding-top: 1.5%;
 }
 
-nav p {
-  display: flex;
-  flex-wrap: wrap;
-  padding-left: 20%;
-  /* padding: 10px; */
-  /* padding-bottom: 10px; */
+#nav a {
+  padding-left: 3%;
+  padding-top: 2%;
+  padding-bottom: 3%;
 }
 
 /* ADD main{} section here!!! */
