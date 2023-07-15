@@ -1,0 +1,81 @@
+body {
+  background: linear-gradient(to bottom right, #022550, #506def, #be8105);
+}
+
+#introduction-img {
+  display: block;
+  margin: 0 auto;
+  max-height: 70%;
+  max-width: 50%;
+  border: solid #022550;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  box-shadow: 2px 2px 2px 2px rgb(27, 30, 69);
+}
+
+.avatar-container {
+  position: relative;
+  background-position: center;
+  background: linear-gradient(94deg, #506def, #be8105, #022550);
+  background-size: 300% 300%;
+  animation: gradient-animation 15s ease infinite;
+  height: auto;
+}
+
+header h1 {
+  background: #212529;
+  text-align: center;
+  box-shadow: 0 6px 6px 0 black;
+  border-radius: 5%;
+  text-shadow: 2px 2px 2px black;
+  color: azure;
+}
+
+section {
+  padding: 5%;
+}
+
+.about-container {
+  margin-top: 40px;
+  border-top: solid 3px;
+}
+
+.catalogue-container {
+  border-top: solid 3px;
+}
+
+h2 {
+  text-decoration: underline;
+  text-shadow: 2px 2px 2px black;
+  color: azure;
+}
+
+h3 {
+  padding-top: 20px;
+  text-decoration: overline;
+  text-shadow: 2px 2px 2px black;
+  color: azure;
+}
+
+p {
+  text-shadow: 2px 2px 2px black;
+  color: azure;
+}
+
+.nav-item {
+  text-align: center;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

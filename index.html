@@ -4,8 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/stylesheet.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/css/style.css"
+      <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@1,300&display=swap"
@@ -14,78 +25,117 @@
     <title>Ryan Tixier's Portfolio</title>
   </head>
   <body>
-    <header class="card">
-      <img
-        id="introduction-img"
-        src="./assets/images/IMG_2658.jpeg"
-        alt="Personal Avatar"
-      />
-      <div id="head-nav">
-        <h1 id="introduction-name">Ryan Tixier</h1>
-        <!-- <h1>Ryan Tixier</h1> -->
-        <!-- inset image -->
-
-        <nav id="nav">
-          <!-- link items:  -->
-          <a>About Me</a>
-          <a>Websites</a>
-          <a>Contact</a>
-        </nav>
+    <!-- NEW NAVBAR  -->
+    <header class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">RT</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#about">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#catalogue"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Catalogue
+                </a>
+                <ul class="dropdown-menu" data-bs-theme="dark">
+                  <li>
+                    <a class="dropdown-item" href="#projects">Projects</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#bootcamp"
+                      >Bootcamp Assignments</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#in-progress">In Progress</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="mx-0 p-3 avatar-container">
+        <img
+          id="introduction-img"
+          src="./assets/images/IMG_2658.jpeg"
+          alt="Personal Avatar"
+        />
+        <h1 id="name">Ryan Tixier</h1>
       </div>
     </header>
-
-    <main>
-      <section>
-        <!-- This is where the "About me..." section will go -->
-        <!-- img: Photo/avatar (LEFT, bordered, glow on hover?)-->
-        <!-- draft general content about myself and my work (RIGHT, bordered?) -->
-        <h2 class="about">About Me</h2>
-        <p>
+    <!-- NEW NAVBAR END -->
+    <main class="container">
+      <section class="about-container">
+        <h2 class="container" id="about">About</h2>
+        <p class="px-4">
           Greetings! My name is Ryan Tixier (last name prounounced T-C-A); I am
           an aspiring web developer, Rubik's cube aficionado, and proud owner of
-          a... hybrid. Welcome to my portfolio! Everything here is new, but the
-          site will continuously evolve as I learn more about coding. For now, I
-          hope you enjoy exploring what I have.
+          a... hybrid. Welcome to my ever-evolving portfolio! I hope you enjoy
+          exploring everything it has to offer.
         </p>
       </section>
-
-      <section>
-        <aside>
-          <h2>Websites</h2>
-          <h4>Prework study guide</h4>
-          <h4>Module Challenge 1</h4>
-          <h2>Coming soon!</h2>
-          <h2>Contact</h2>
-        </aside>
-        <article>
-          <!-- Main website: prework study guide -->
-          <h2>Prework Study Guide</h2>
-          <!-- screenshot of site -->
-          <!-- link pic to website URL -->
-          <!-- description/purpose -->
-          <p>
-            My finished, final project of the Prework course offered through the
-            Full-Stack Bootcamp at the University of Denver (DU). This site
-            includes helpful notes and resources for aspiring, new coders
-            enrolled in the DU Bootcamp.
-          </p>
-        </article>
-        <article>
-          <!--Remaining websites: (1) module-1-challenge and (2) placeholder website -->
-          <!-- MODULE 1 CHALLENGE SECTION (LEFT PANEL) -->
-          <!-- screenshot of site -->
-          <!-- link pic to website URL -->
-          <!-- description/purpose -->
-          <!-- PLACEHOLDER WEBSITE (RIGHT PANEL) -->
-          <!-- screenshot of site -->
-          <!-- link pic to website URL ("COMING SOON")-->
-          <!-- description/purpose -->
-
-          <!--Juxtapose these 2 flexboxes side-by-side, underneath main wesite article-->
-        </article>
+      <section class="catalogue-container">
+        <h2 class="container" id="catalogue">Catalogue</h2>
+        <p class="px-4">
+          Below is a list of applications and websites to which I have
+          contributed. Click each card for more information.
+        </p>
+        <div class="container">
+          <!-- h3 projects cards - Workout Wizard | Dr. Drink -->
+          <div class="container">
+            <div class="card mt-3 px-2" id="projects">
+          <h3>Projects</h3>
+          <div class="card px-4" id="workout-wizard">Workout Wizard</div>
+          <div class="card px-4" id="dr-drink">Dr. Drink</div>
+        </div>
+        </div>
+        <!-- h3 bootcamp cards - m3c | m9c -->
+        <div class="container">
+          <div class="card mt-3 px-2" id="bootcamp">
+            <h3>Bootcamp Assignments</h3>
+            <div class="card px-4" id="m3c">Random Password Generator</div>
+            <div class="card px-4" id="m9c">README.md Generator</div>
+          </div>
+        </div>
+        <!-- h3 in progress card - anxiety chess -->
+        <div class="container">
+          <h3 id="in-progress">In Progress</h3>
+          <div class="card px-4" id="anxiety-chess">Anxiety Chess</div>
+        </div>
       </section>
     </main>
 
-    <footer></footer>
+    <footer>
+      <!-- contact - modal -->
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
