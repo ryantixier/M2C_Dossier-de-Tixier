@@ -69,6 +69,7 @@ section {
 }
 
 #catalogue-btn {
+  justify-content: space-between;
   display: inline-block;
   width: 33%;
 }
@@ -103,5 +104,18 @@ p {
   }
   100% {
     background-position: 0% 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .catalogue-cards {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #catalogue-btn {
+    text-align: center;
+    min-width: 60%;
+    margin: 1%;
   }
 }
