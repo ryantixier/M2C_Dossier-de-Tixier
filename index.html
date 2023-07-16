@@ -47,13 +47,7 @@
                 <a class="nav-link" aria-current="page" href="#about">About</a>
               </li>
               <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#catalogue"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
+                <a class="nav-link" aria-current="page" href="#about">
                   Catalogue
                 </a>
                 <ul class="dropdown-menu" data-bs-theme="dark">
@@ -78,7 +72,7 @@
           </div>
         </div>
       </nav>
-      <div class="mx-0 p-3 avatar-container">
+      <div class="mx-0 p-3 introduction-container">
         <img
           id="introduction-img"
           src="./assets/images/IMG_2658.jpeg"
@@ -104,26 +98,22 @@
           Below is a list of applications and websites to which I have
           contributed. Click each card for more information.
         </p>
-        <!-- h3 projects cards - Workout Wizard | Dr. Drink -->
-        <div class="container">
-          <div class="card mt-3 px-2" id="projects">
-            <h3>Projects</h3>
-            <div class="card px-4" id="workout-wizard">Workout Wizard</div>
-            <div class="card px-4" id="dr-drink">Dr. Drink</div>
-          </div>
-        </div>
-        <!-- h3 bootcamp cards - m3c | m9c -->
-        <div class="container">
-          <div class="card mt-3 px-2" id="bootcamp">
-            <h3>Bootcamp Assignments</h3>
-            <div class="card px-4" id="m3c">Random Password Generator</div>
-            <div class="card px-4" id="m9c">README.md Generator</div>
-          </div>
-        </div>
-        <!-- h3 in progress card - anxiety chess -->
-        <div class="container">
-          <h3 id="in-progress">In Progress</h3>
-          <div class="card px-4" id="anxiety-chess">Anxiety Chess</div>
+        <div class="d-flex justify-content-between">
+          <button class="btn btn-dark" id="catalogue-btn" type="button">
+            <!-- add collapse to button attributes above -->
+            <h4>Projects</h4>
+            <!-- h4 projects cards - Workout Wizard | Dr. Drink -->
+          </button>
+          <button class="btn btn-dark" id="catalogue-btn" type="button">
+            <!-- add collapse to button attributes above -->
+            <h4>Bootcamp Assignments</h4>
+            <!-- h4 bootcamp cards - m3c | m9c -->
+          </button>
+          <button class="btn btn-dark" id="catalogue-btn" type="button">
+            <!-- add collapse to button attributes above -->
+            <h4>In Development</h4>
+            <!-- h4 in progress card - anxiety chess -->
+          </button>
         </div>
       </section>
     </main>
@@ -145,4 +135,4 @@
 <!-- space-evenly catalogue items on single row -->
 <!-- ... convert each item to a dropdown button -->
 <!-- ... on click, dropdown displays titles of sub-items -->
-<!-- ... on sub-item click, modal w description and link to deployment -->
+<!-- ... on sub-item click, modal w screenshot, description, and link to deployment -->

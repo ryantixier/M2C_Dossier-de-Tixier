@@ -15,13 +15,14 @@ body {
   box-shadow: 2px 2px 2px 2px rgb(27, 30, 69);
 }
 
-.avatar-container {
+.introduction-container {
   position: relative;
   background-position: center;
   background: linear-gradient(94deg, #506def, #be8105, #022550);
   background-size: 300% 300%;
   animation: gradient-animation 15s ease infinite;
   height: auto;
+  border-bottom: solid 3px #022550;
 }
 
 header h1 {
@@ -44,12 +45,19 @@ section {
 
 .catalogue-container {
   border-top: solid 3px;
+  justify-content: space-around;
+}
+
+#catalogue-btn {
+  display: inline-block;
+  width: 33%;
 }
 
 h2 {
   text-decoration: underline;
   text-shadow: 2px 2px 2px black;
   color: azure;
+  text-align: center;
 }
 
 h3 {
@@ -62,6 +70,8 @@ h3 {
 p {
   text-shadow: 2px 2px 2px black;
   color: azure;
+  font-size: larger;
+  text-align: center;
 }
 
 .nav-item {
