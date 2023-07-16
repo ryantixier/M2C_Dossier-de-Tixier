@@ -68,7 +68,7 @@ section {
   justify-content: space-around;
 }
 
-#catalogue-btn {
+.catalogue-btn {
   justify-content: space-between;
   display: inline-block;
   width: 33%;
@@ -113,7 +113,7 @@ p {
     justify-content: center;
     align-items: center;
   }
-  #catalogue-btn {
+  .catalogue-btn {
     text-align: center;
     min-width: 60%;
     margin: 1%;
